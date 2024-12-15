@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartoon Network 2005 Vibes</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,16 +13,16 @@
     />
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar">
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Shows</a>
-        <a href="#" class="nav-link">Games</a>
-        <a href="#" class="nav-link">Videos</a>
-      </nav>
-    </header>
+    <main class="grid-container">
+      <header class="header">
+        <nav class="navbar">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Shows</a>
+          <a href="#" class="nav-link">Games</a>
+          <a href="#" class="nav-link">Videos</a>
+        </nav>
+      </header>
 
-    <main>
       <section class="shows">
         <h2 class="shows-title">Featured Shows</h2>
         <div class="scroll-container">
@@ -35,18 +35,7 @@
         </div>
       </section>
 
-      <div class="content-section">
-      <section class="new-image-section">
-        <div class="image-card">
-          <img
-            src="./images/Screenshot 2024-12-14 at 6.19.49 PM.png"
-            alt="New Image"
-            class="image-card-img"
-          />
-        </div>
-      </section>
-
-      <div class="content-container">
+      <div class="side-container">
         <div class="ads-sidebar">
           <div class="ad ad-large">
             <img src="./images/Johnny_Bravo.webp" alt="Ad 1" class="ad-image" />
@@ -57,7 +46,28 @@
             <div class="ad-text">Play New Cartoon Games Online!</div>
           </div>
         </div>
+        <div class="text-container">
+          <h2 class="welcome-text">Welcome</h2>
+        </div>
+      </div>
 
+      <div class="content-container">
+        <section class="new-image-section">
+          <div class="image-card">
+            <img
+              src="./images/Screenshot 2024-12-14 at 6.19.49 PM.png"
+              alt="New Image"
+              class="image-card-img"
+            />
+          </div>
+          <div class="image-card">
+            <img
+              src="./images/Batman_Beyond_Evolution_of_Evil.webp"
+              alt="New Image"
+              class="image-card-img"
+            />
+          </div>
+        </section>
         <section class="games">
           <h2 class="games-title">Games</h2>
           <div class="scroll-container games-container">
@@ -67,7 +77,9 @@
                 alt="Game 1"
                 class="game-image"
               />
-              <p class="game-title">Foster's Home For Imaginary Friends: A Friend In Need</p>
+              <p class="game-title">
+                Foster's Home For Imaginary Friends: A Friend In Need
+              </p>
             </div>
             <div class="game-card">
               <img
@@ -96,10 +108,10 @@
           </div>
         </section>
       </div>
-    </main>
 
-    <footer>
-      <p>© 2005 Cartoon Network (Reimagined)</p>
-    </footer>
+      <footer>
+        <p>© 2005 Cartoon Network (Reimagined)</p>
+      </footer>
+    </main>
   </body>
 </html>

@@ -19,12 +19,36 @@ h2 {
   margin-top: 20px;
 }
 
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome-text {
+  text-orientation: upright;
+  height: 100%;
+  writing-mode: vertical-lr;
+  font-size:80px;
+
+}
+
+.grid-container {
+  width: 100%;
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 1fr 100px;
+}
+
 /* Header and Navbar Styles */
 .header {
   background-color: #111; /* Dark background for header */
   padding: 20px;
   text-align: center;
   font-size: 1.2rem;
+  grid-column-start: span 3;
 }
 
 .navbar {
@@ -50,7 +74,15 @@ h2 {
 /* Featured Shows Section */
 .shows {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   padding: 20px 10px;
+  grid-row-start: 2;
+
+  grid-column-start: span 3;
 }
 
 .scroll-container {
@@ -77,9 +109,11 @@ h2 {
 /* New Image Section */
 .new-image-section {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 20px;
   text-align: center;
+  width: 100%;
+  gap: 20px;
 }
 
 .image-card {
@@ -89,25 +123,35 @@ h2 {
 
 .image-card-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
+  grid-column-start: 2;
 }
 
 /* Content Section and Ads Sidebar */
 .content-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /* Sidebar, Main, and Image */
-  grid-template-rows: auto;
+  grid-column: 2 / span 2;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   align-items: start;
   padding: 20px;
   flex-wrap: wrap; /* Ensure content stacks properly */
 }
 
+.side-container {
+  grid-row: 3 / span 1;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+}
+
 .ads-sidebar {
   position: sticky;
   top: 0;
-  width: 250px;
+  /* width: 250px; */
+  grid-row: 3 / span 1;
 }
 
 .ad {
@@ -179,6 +223,8 @@ footer {
   color: #82c9ff; /* Light blue text for footer */
   text-align: center;
   padding: 20px;
+  grid-row-start: 4;
+  grid-column: span 3;
 }
 
 /* Responsive Design */
